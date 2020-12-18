@@ -19,16 +19,14 @@ def get_txt_content():
 def solve_riddle(input_arr):
     valid_password_num = 0
     for line in input_arr:
-        counter = 0
-        for char in line[1][2]:
-            if char == line[1][1][0]:
-                counter += 1
-        if int(line[0]) <= counter <= int(line[1][0]):
-            valid_password_num += 1
+        bool1 = (line[1][2][int(line[0])-1] == line[1][1][0] != line[1][2][int(line[1][0])-1])
+        bool2 = (line[1][2][int(line[0])-1] != line[1][1][0] == line[1][2][int(line[1][0])-1])
+        if bool1 or bool2:
+             valid_password_num += 1
     return valid_password_num
 
 
 if __name__ == "__main__":
     input_arr = get_txt_content()
     solution = solve_riddle(input_arr)
-    print(solution) # solution = 447
+    print(solution) # solution = 249
