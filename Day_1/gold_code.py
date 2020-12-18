@@ -18,10 +18,11 @@ def get_txt_content():
 def solve_riddle(input_arr):
     for num1 in input_arr:
         for num2 in input_arr:
-            if num1 + num2 == 2020:
-                return num1*num2
+            for num3 in input_arr:
+                if num1 + num2 + num3 == 2020:
+                    return num1*num2*num3
 
 if __name__ == '__main__':
     input_arr = get_txt_content()
     solution = solve_riddle(input_arr)
-    print(solution) # solution = 876459
+    print(solution) # solution = 116168640
