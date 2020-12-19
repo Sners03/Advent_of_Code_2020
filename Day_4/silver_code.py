@@ -9,21 +9,53 @@ def get_txt_content():
     content = file.readlines()
     file.close()
 
-    #content.split(" ")
     input_arr = []
+    new_arr = []
     marker = 0
+    
+    # everything in one line
     for i in range(len(content)):
         if content[i] == '\n':
             input_arr.append(content[marker:i])
             marker = i+1
-
+    # every element in one line in one spot
     for i in range(len(input_arr)):
         for j in range(len(input_arr[i])):
             input_arr[i][j] = input_arr[i][j].split(" ")
+    
+    # reduce unnecessary list dimension (3D-->2D) 
+    for i in range(len(input_arr)):
+        tmp_arr = []
+        for j in range(len(input_arr[i])):
+            for k in range(len(input_arr[i][j])):
+                tmp_arr.append(input_arr[i][j][k])
+        new_arr.append(tmp_arr)
+    
+    # remove linebreaks from elements
+    """
+    for i in range(len(new_arr)):
+        for j in range(len(new_arr[i])):
+            if new_arr[i][j][-1] == '\n':
+                new_arr[i][j] = new_arr[i][j][:-1]
+    """
+    
+    return new_arr
 
-    return input_arr
+def solve_riddle(input_arr): 
+    solution = len(input_arr)
+    print(solution)
+    for i in input_arr:
+        if len(i) < 8:
+            is_valid=False
+            for j in i:
+                if j[:3]=="cid":
+                    is_valid=True
+            if not(is_valid):
+                solution -= 1
+
+    return solution
 
 if __name__=='__main__':
     input_arr = get_txt_content()
-    for i in input_arr:
-        print(i)
+    solution = solve_riddle(input_arr)
+    print(solution)
