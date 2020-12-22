@@ -40,18 +40,20 @@ def get_txt_content():
     """
     
     return new_arr
-
+#didnt work... maybe regex?
 def solve_riddle(input_arr): 
     solution = len(input_arr)
     print(solution)
     for i in input_arr:
-        if len(i) < 8:
-            is_valid=False
-            for j in i:
-                if j[:3]=="cid":
-                    is_valid=True
-            if not(is_valid):
-                solution -= 1
+        if len(i) == 8:
+            solution -= 1
+        if len(i) == 7:
+            is_valid = False
+            for j in i:  
+                if i[:3]=='cid':
+                    is_valid = True
+            if is_valid:
+                solution-=1
 
     return solution
 
