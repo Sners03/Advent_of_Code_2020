@@ -37,10 +37,20 @@ def get_seat_ID(pass_code):
     # the higher marker should be equal to the lower one in each case
     return higher_row_marker*8 + lower_column_marker
 
+def get_highest_ID(input_arr):
+    highest_ID = 0
+    current_ID = 0
+
+    for code in input_arr:
+        current_ID = get_seat_ID(code)
+        if highest_ID < current_ID:
+            highest_ID = current_ID
+
+    return highest_ID
+
 if __name__ == "__main__":
-    assert get_seat_ID("BFFFBBFRRR") == 567
-    assert get_seat_ID("FFFBBBFRRR") == 119
-    assert get_seat_ID("BBFFBBFRLL") == 820
-    print("all tests passed")
+    input_arr = get_txt_content()
+    highest_ID = get_highest_ID(input_arr)
+    print(f"The highest seat ID on a boarding pass is: {highest_ID}")
 
 
