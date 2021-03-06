@@ -17,18 +17,30 @@ def get_txt_content():
     return input_arr
 
 def get_seat_ID(pass_code):
-    rownum = 0
-    columnnum = 0
     lower_row_marker = 0
     higher_row_marker = 127
     lower_column_marker = 0
-    higher_column_marker = 127
+    higher_column_marker = 7
 
     for i, char in enumerate(pass_code[:-3]):
         if(char=='F'):
-            higher_row_marker -= (64/(i+1))
+            higher_row_marker -= int(64/2**(i))
         if(char=='B'):
-            lower_row_marker += (64/(i+1))
-    
-    return higher_row_marker*8
+            lower_row_marker += int(64/2**(i))
+
+    for j, char in enumerate(pass_code[-3:]):
+        if(char=='L'):
+            higher_column_marker -= int(4/2**(j))
+        if(char=='R'):
+            lower_column_marker += int(4/2**(j))
+
+    # the higher marker should be equal to the lower one in each case
+    return higher_row_marker*8 + lower_column_marker
+
+if __name__ == "__main__":
+    assert get_seat_ID("BFFFBBFRRR") == 567
+    assert get_seat_ID("FFFBBBFRRR") == 119
+    assert get_seat_ID("BBFFBBFRLL") == 820
+    print("all tests passed")
+
 
