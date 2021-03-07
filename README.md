@@ -32,7 +32,8 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 
 ### Example Input Code in Python
 
-'''python
+
+```python
 from tkinter import filedialog
 
 def get_txt_content():
@@ -43,8 +44,7 @@ def get_txt_content():
     file = open(filename,'r')
     content = file.readlines()
     file.close()
-'''
-
+```
 
 ### Support or Contact
 
