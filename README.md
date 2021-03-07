@@ -9,7 +9,7 @@ You can find the tasks on [adventofcode.com](https://adventofcode.com/2020).
 
 ## Download
 
-Here is the download for the [ZIP](https://github.com/Sners03/Advent_of_Code_2020/raw/master/all_files.zip). \n
+Here is the download for the [ZIP](https://github.com/Sners03/Advent_of_Code_2020/raw/master/all_files.zip). <br />
 Note that at this point all files are written in Python3, therefore Python 3 is required.
 
 ### Example Input Code in Python
