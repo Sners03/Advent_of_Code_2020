@@ -1,7 +1,7 @@
-<center># Advent of Code 2020 Solutions</center>
-<center>All solutions to Advent of Code 2020 by Sners03</center>
+<h1 style="text-align: center;"> Advent of Code 2020 Solutions </h1>
+All solutions to Advent of Code 2020 by Sners03
 
-<center>You can find the tasks on [adventofcode.com](https://adventofcode.com/2020).</center>
+You can find the tasks on [adventofcode.com](https://adventofcode.com/2020).
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
