@@ -1,7 +1,7 @@
 # Advent of Code 2020 Solution
 All solutions to Advent of Code 2020 by Sners03
 
-You can find the tasks on [adventofcode.com/2020](https://adventofcode.com/2020).
+You can find the tasks on [adventofcode.com](https://adventofcode.com/2020).
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
