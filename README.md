@@ -1,5 +1,5 @@
-# Advent of Code 2020n
-All solutions to Advent of Code 2020 by Sners03
+# Advent of Code 2020 Solutions 
+<center>All solutions to Advent of Code 2020 by Sners03</center>
 
 You can find the tasks on [adventofcode.com](https://adventofcode.com/2020).
 
