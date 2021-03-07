@@ -1,12 +1,18 @@
-# Welcome to GitHub Pages
+# Advent of Code 2020 Solution
+All solutions to Advent of Code 2020 by Sners03
 
 You can use the [editor on GitHub](https://github.com/Sners03/Advent_of_Code_2020/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-## Markdown
+## Folow this repository
+
+[<img src="https://s18955.pcdn.co/wp-content/uploads/2018/02/github.png" width="25"/>](https://github.com/Sners03/Advent_of_Code_2020/subscription)
+
+## Download
 
 Here is the download for the [ZIP](https://github.com/Sners03/Advent_of_Code_2020/raw/master/all_files.zip)
+
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
