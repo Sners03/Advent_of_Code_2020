@@ -1,7 +1,7 @@
 # Advent of Code 2020 Solution
 All solutions to Advent of Code 2020 by Sners03
 
-You can use the [editor on GitHub](https://github.com/Sners03/Advent_of_Code_2020/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+You can find the tasks on [adventofcode.com/2020](https://adventofcode.com/2020).
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
