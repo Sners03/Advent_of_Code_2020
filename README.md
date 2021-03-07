@@ -1,10 +1,10 @@
-## Welcome to GitHub Pages
+# Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/Sners03/Advent_of_Code_2020/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+## Markdown
 
 Here is the download for the [ZIP](https://github.com/Sners03/Advent_of_Code_2020/raw/master/all_files.zip)
 
@@ -30,9 +30,28 @@ Syntax highlighted code block
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+### Example Input Code in Python
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Sners03/Advent_of_Code_2020/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+'''python
+from tkinter import filedialog
+
+def get_txt_content():
+    filename =  filedialog.askopenfilename(initialdir = "",
+                                            title = "Select file",
+                                            filetypes = (("txt files","*.txt")
+                                                        ,("all files","*.*")))
+    file = open(filename,'r')
+    content = file.readlines()
+    file.close()
+
+    input_arr = []
+
+    for line in content:
+        input_arr.append(line[:-1]) # filter \n
+
+    return input_arr
+'''
+
 
 ### Support or Contact
 
